@@ -300,3 +300,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Crestron Files
+*.projectinfo
+ControlSystem.cfg
+

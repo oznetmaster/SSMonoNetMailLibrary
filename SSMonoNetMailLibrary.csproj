@@ -1,0 +1,139 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87DD4C53-C5F6-4C37-B942-53A33F3CD1A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSMonoNetMailLibrary</RootNamespace>
+    <AssemblyName>SSMonoNetMailLibrary</AssemblyName>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92500};{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETCF;SSHARP;NET_4_0;SECURITY_DEP;NET_2_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+    <DefineConstants>NETCF;SSHARP;NET_4_0;SECURITY_DEP;NET_2_0</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpReflectionInterface, Version=1.0.5583.25238, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpReflectionInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpCrestronExtensionsLibrary, Version=1.0.0.17259, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpCrestronExtensionsLibrary\SSharpCrestronExtensionsLibrary\bin\Release\SSharpCrestronExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpReflectionExtensionsLibrary, Version=1.0.0.10876, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpReflectionExtensionsLibrary\SSharpReflectionExtensionsLibrary\bin\Release\SSharpReflectionExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoComponentBackgroundWorkerLibrary, Version=1.0.0.13208, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoComponentModelLibrary\SSMonoComponentBackgroundWorkerLibrary\bin\Release\SSMonoComponentBackgroundWorkerLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoIOLibrary, Version=1.0.0.10943, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoIOLibrary\SSMonoIOLibrary\bin\Release\SSMonoIOLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoNetLibrary, Version=1.0.0.29237, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoNetLibrary\SSMonoNetLibrary\bin\Release\SSMonoNetLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoNetWebLibrary, Version=1.0.0.20700, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoNetLibrary\SSMonoNetWebLibrary\bin\Release\SSMonoNetWebLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoSslStreamLibrary, Version=1.0.0.11544, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoSslStreamLibrary\SSMonoSslStreamLibrary\bin\Release\SSMonoSslStreamLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoSupportLibrary, Version=1.0.0.10893, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoSupportLibrary\bin\Release\SSMonoSupportLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoX509CertificatesLibrary, Version=1.0.0.11458, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoX509CertificatesLibrary\SSMonoX509CertificatesLibrary\bin\Release\SSMonoX509CertificatesLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlternateView.cs" />
+    <Compile Include="AlternateViewCollection.cs" />
+    <Compile Include="Attachment.cs" />
+    <Compile Include="AttachmentBase.cs" />
+    <Compile Include="AttachmentCollection.cs" />
+    <Compile Include="Compatibility.cs" />
+    <Compile Include="DeliveryNotificationOptions.cs" />
+    <Compile Include="LinkedResource.cs" />
+    <Compile Include="LinkedResourceCollection.cs" />
+    <Compile Include="MailAddress.cs" />
+    <Compile Include="MailAddressCollection.cs" />
+    <Compile Include="MailMessage.cs" />
+    <Compile Include="MailPriority.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendCompletedEventHandler.cs" />
+    <Compile Include="SmtpAccess.cs" />
+    <Compile Include="SmtpClient.cs" />
+    <Compile Include="SmtpDeliveryMethod.cs" />
+    <Compile Include="SmtpException.cs" />
+    <Compile Include="SmtpFailedRecipientException.cs" />
+    <Compile Include="SmtpFailedRecipientsException.cs" />
+    <Compile Include="SmtpPermission.cs" />
+    <Compile Include="SmtpPermissionAttribute.cs" />
+    <Compile Include="SmtpStatusCode.cs" />
+    <Compile Include="System.Net.Mime\ContentDisposition.cs" />
+    <Compile Include="System.Net.Mime\ContentType.cs" />
+    <Compile Include="System.Net.Mime\DispositionTypeNames.cs" />
+    <Compile Include="System.Net.Mime\MediaTypeNames.cs" />
+    <Compile Include="System.Net.Mime\TransferEncoding.cs" />
+    <None Include="Properties\ControlSystem.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rem  S# preparation will execute after these operations</PostBuildEvent>
+  </PropertyGroup>
+</Project>
